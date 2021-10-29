@@ -1,0 +1,6 @@
+.banner-container {
+  background-image: url('../../images//banner1.jpg');
+  background-repeat: no-repeat;
+
+  height: 600px;
+}
