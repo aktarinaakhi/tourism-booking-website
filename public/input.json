@@ -1,0 +1,21 @@
+[
+
+	{
+	  "id": 29,
+	  "place": "Sremangal",
+	  "name": "Hotel 71",
+	  "image": "https://i.ibb.co/qkq82tr/eddy-billard-JOo-OPt8t-TPY-unsplash.jpg",
+	  "discriptoin": "2.4 km from center",
+	  "price": 3700,
+	  "rating": 4
+	},
+	{
+	  "id": 30,
+	  "place": "Sremangal",
+	  "name": "THE AVENUE HOTEL & SUITES",
+	  "image": "https://i.ibb.co/qkq82tr/eddy-billard-JOo-OPt8t-TPY-unsplash.jpg",
+	  "discriptoin": "2.5 km from center",
+	  "price": 4300,
+	  "rating": 4
+	}
+  ]

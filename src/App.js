@@ -1,11 +1,15 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './context/AuthProvider';
-import Home from './pages/Home/Home';
+import Home from './pages/Home/Home/Home';
 import Login from './pages/Login/Login';
 import NotFound from './pages/NotFound/NotFound';
+import PlaceOrder from './pages/PlaceOrder/PlaceOrder';
 import Footer from './shared/Footer/Footer';
 import Header from './shared/Header/Header';
+import PrivateRoute from './context/PrivateRoute';
+import MyBooking from './pages/Dashboard/User/MyBooking/MyBooking'
+import AddService from './pages/Dashboard/Admin/AddService/AddService';
 
 function App() {
   return (
@@ -22,9 +26,23 @@ function App() {
             <Home></Home>
           </Route>
 
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
+          <PrivateRoute exact path="/placeorder/:serviceId">
+            <PlaceOrder></PlaceOrder>
+          </PrivateRoute>
+
+          <PrivateRoute exact path="/myBooking">
+            <MyBooking></MyBooking>
+          </PrivateRoute>
+
+          <PrivateRoute exact path="/addService">
+            <AddService></AddService>
+          </PrivateRoute>
+
+          <PrivateRoute exact path="/placeorder/:serviceId">
+            <PlaceOrder></PlaceOrder>
+          </PrivateRoute>
+
+
 
           <Route exact path="/login">
             <Login></Login>

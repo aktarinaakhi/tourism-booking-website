@@ -1,4 +1,3 @@
-console.log(process.env);
 const firebaseConfig = {
 
     apiKey: "AIzaSyCdO2Nh9hEMdNJrZ4VVTZuKL5I6U7qZ4nk",

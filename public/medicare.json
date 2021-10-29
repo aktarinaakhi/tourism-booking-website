@@ -1,0 +1,93 @@
+[
+  {
+    "id" :1,
+    "imgService" :"https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2xpbmljJTIwc2VydmljZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "serviceName": "IMAGING",
+     "description" : "Medicare Diagnostic Centre Ltd. is an advanced Centre providing the diagnostic imaging services in an elevated ambience, completed by service and report efficiency.",
+    "doctorName" : "SUSSIE WOLFF",
+    "imgDoctor" : "https://images.unsplash.com/photo-1591604021695-0c69b7c05981?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGRvY3RvcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "specialities" : "Pediatrician",
+    "days" : "sat, sun, mon, tues, wednes"
+    
+  },
+  {
+    "id" :2,
+     "imgService" : "https://images.unsplash.com/photo-1599045118108-bf9954418b76?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2xpbmljJTIwc2VydmljZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "serviceName": "PATHOLOGY",
+      "description" : "A typical day for a pediatrician may include appointments with sick children, conducting physicals to assess overall health, prescribing medicine, discussing treatment options with families, coordinating with other medical professionals for diagnosis, dealing with pediatric emergencies, and educating parents about their children’s illness and how to assist in the treatment process.",
+    "doctorName" : "PROF. DR. HAM NAZMUL AHSAN",
+    "imgDoctor" : "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRvY3RvcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "specialities" : "Medicine",
+    "days" : "sat, sun, mon, thirs, fri"
+  },
+  {
+    "id" :3,
+     "imgService" : "https://images.unsplash.com/photo-1519494080410-f9aa76cb4283?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2xpbmljJTIwc2VydmljZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "serviceName": "DENTIST",
+      "description" : " Pediatricians may work during regular business hours or other shifts depending on the needs of their employer; some pediatricians work in private practice, and others work in hospitals and clinics that are open 24 hours a day. Most of this work is performed indoors in a medical setting.",
+    "doctorName" : "PROF. DR. MD. ZAHIR UDDIN",
+    "imgDoctor" : "https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZG9jdG9yfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "specialities" : "Medicine",
+    "days" : "sat, tues, wednes, thirs, fri"
+  },
+  {
+    "id" :4,
+     "imgService" : "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNsaW5pYyUyMHNlcnZpY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "serviceName": "CARDIOLOGIST",
+      "description" : "Pediatricians must have basic computer skills, as lots of hospitals use digital records.Pediatricians may work during regular business hours or other shifts depending on the needs of their employer; some pediatricians work in private practice, and others work in hospitals and clinics that are open 24 hours a day.",
+    "doctorName" : "PROF. DR. SAYEBA AKHTER",
+    "imgDoctor" : "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZG9jdG9yfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "specialities" : "Gynaecology",
+    "days" : "mon, tues, wednes, thirs, fri"
+  },
+  {
+    "id" :5,
+     "imgService" : "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNsaW5pYyUyMHNlcnZpY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "serviceName": "CHIROPRACTOR",
+      "description" : "To become a pediatrician, individuals must first get a bachelor’s degree and apply to medical school. Once accepted, they complete four years of medical school and receive the medical degree and begin a residency in their chosen field.",
+    "doctorName" : "DR. UTPALA MAZUMDER",
+    "imgDoctor" : "https://media.istockphoto.com/photos/pediatrician-talks-with-patients-mother-picture-id1293681788?b=1&k=20&m=1293681788&s=170667a&w=0&h=86FIfZB_E9W0-1olORv2I6P5Fvd6EUMZUVPyiMfVrAY=",
+    "specialities" : "Gynaecology",
+    "days" : "sat, tues, wednes, thirs, fri"
+  },
+  {
+    "id" :6,
+     "imgService" : "https://images.unsplash.com/photo-1533686309771-f00107cf6004?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGNsaW5pYyUyMHNlcnZpY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "serviceName": "PEDIATRICIAN",
+      "description" : "One of the many things you need to do to prepare for your little one’s arrival is to choose a doctor to oversee his or her health care. A pediatrician is medical doctor who manages the physical, behavioral, and mental health of children from birth until age 21. A pediatrician is trained to diagnose.",
+    "doctorName" : "PROF. DR. SK. NURUL ALAM",
+    "imgDoctor" : "https://media.istockphoto.com/photos/portrait-of-a-confident-young-doctor-using-a-digital-tablet-picture-id1267013720?b=1&k=20&m=1267013720&s=170667a&w=0&h=fplvckjYyHoZIQ6O6p01dVF7pdrBYkBTP4rrhMx58v8=",
+    "specialities" : "Orthopaedic",
+    "days" : "sat, sun, mon, tues, fri"
+  },
+  {
+    "id" :7,
+   "imgService":"https://images.unsplash.com/photo-1589297598064-8a0c7d8f9909?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNsaW5pYyUyMHNlcnZpY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "serviceName": "PHARMACY",
+    "doctorName" : "PROF. DR. SM AKHI ISLAM",
+      "description" : "Medicare Medicine corner is a well-known retailer of medicine in Bangladesh. We provide all kinds of life saving medicine, which are available in all branches of Popular Diagnostics Ltd. Our aim is to provide good medicine and best service quality to the patients.",
+    "imgDoctor" : "https://media.istockphoto.com/photos/doctor-clicking-on-a-laptop-before-her-picture-id1292777576?b=1&k=20&m=1292777576&s=170667a&w=0&h=Tg1ASn3aw19DgyqjGaaWqJmPeXiDRaU1LW8c83Y5tbw=",
+    "specialities" : "Orthopaedic",
+    "days" : "sun, mon, tues, wednes, thurs"
+  },
+  {
+    "id" :8,
+    "imgService" :"https://media.istockphoto.com/photos/disinfecting-dentist-office-picture-id1225171541?b=1&k=20&m=1225171541&s=170667a&w=0&h=RK6jFkiFzGAOSZkdjtkaBDtbREGLiDpwDNiEdINM7pQ=",
+    "serviceName": "MEDICAL ADVICES",
+      "description" : "Most hospitals ask if you have a pediatrician when you go in to deliver. Your baby’s first examination may be with a hospital pediatrician or your chosen pediatrician. This depends on hospital policy and whether your pediatrician makes rounds at the hospital where you deliver. If a hospital pediatrician examines your baby.",
+    "doctorName" : "DR. C.M. KUDRAT-E- KHODA",
+    "imgDoctor" : "https://media.istockphoto.com/photos/portrait-of-middle-aged-asian-female-doctor-standing-in-hospital-picture-id1271328839?b=1&k=20&m=1271328839&s=170667a&w=0&h=SIMzwoe8eu43OoY4M3ElZCMxW9MgDbZbVzMhh4VY2zM=",
+    "specialities" : "Cardiology",
+    "days" : "sat, sun, mon, tues, fri"
+  },
+  {
+    "id" :9,
+    "imgService" :"https://media.istockphoto.com/photos/doctor-picture-id1265620914?b=1&k=20&m=1265620914&s=170667a&w=0&h=guT8blKbjRaP91lv7GaUdMYVi_25WCXkFTFCzLb9CoE=",
+    "serviceName": "WE CARE",
+      "description" : "A physician/doctor in pediatrics is a medical practitioner that works directly with children. Also known as pediatricians, these doctors collaborate with nurses, X-ray technicians, medical assistants, and other doctors (such as emergency room doctors and surgeons) to treat children.",
+    "doctorName" : "PROF. DR. M. A. JAIGIRDAR",
+    "imgDoctor" : "https://media.istockphoto.com/photos/pediatrician-talks-with-patients-mother-picture-id1293681788?b=1&k=20&m=1293681788&s=170667a&w=0&h=86FIfZB_E9W0-1olORv2I6P5Fvd6EUMZUVPyiMfVrAY=",
+    "specialities" : "Child/Paediatrics" ,
+    "days" : "sat, sun, mon, tues,fri"                                                                                  
+  }
+  ]

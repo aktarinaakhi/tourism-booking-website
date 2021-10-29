@@ -10,21 +10,15 @@ const Header = () => {
 
         <Navbar collapseOnSelect expand="lg" className="header-container">
             <Container>
-                <Navbar.Brand href="#home">
-                    TOUR TOURISM
+                <Navbar.Brand as={Link} to="/home">
+                    TOURISM BOOKING
                 </Navbar.Brand>
                 <Navbar.Toggle />
 
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
-                        <Nav.Link as={HashLink} to="/home#places">Places</Nav.Link>
-
-                        <NavDropdown title="View Orders" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">My orders</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Manage all orders</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Add new orders</NavDropdown.Item>
-                        </NavDropdown>
+                        <Nav.Link as={Link} to="/home">Home</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
                     </Nav>
 
                 </Navbar.Collapse>
@@ -37,7 +31,12 @@ const Header = () => {
                                 </div>
                                 :
                                 <div className="d-flex">
-                                    <button onClick={logOut} className="btn-login px-3 me-3">Logout</button>
+                                    <NavDropdown title="Dashboard" id="basic-nav-dropdown">
+                                        <NavDropdown.Item as={Link} to="/myBooking">My Booking</NavDropdown.Item>
+                                        <NavDropdown.Item as={Link} to="/">Manage all booking</NavDropdown.Item>
+                                        <NavDropdown.Item as={Link} to="/addService">Add new service</NavDropdown.Item>
+                                    </NavDropdown>
+                                    <button onClick={logOut} className="btn-login px-3 mx-3">Logout</button>
                                     <p>{user.displayName}</p>
 
                                 </div>
