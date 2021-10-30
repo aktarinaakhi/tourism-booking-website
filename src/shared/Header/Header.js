@@ -50,11 +50,11 @@ const Header = () => {
                             admins ?
                                 <NavDropdown title="Dashboard" id="basic-nav-dropdown" className="text-light">
 
-                                    <NavDropdown.Item as={Link} to="/addService">Add new service</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/admin">Admin List</NavDropdown.Item>
                                 </NavDropdown>
                                 :
                                 <NavDropdown title="Dashboard" id="basic-nav-dropdown" className="text-light">
+                                    <NavDropdown.Item as={Link} to="/addService">Add new service</NavDropdown.Item>
 
                                     <NavDropdown.Item as={Link} to="/bookingList">Manage booking list</NavDropdown.Item>
 

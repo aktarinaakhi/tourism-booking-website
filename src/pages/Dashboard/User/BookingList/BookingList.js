@@ -55,7 +55,7 @@ const BookingList = () => {
                                 <td>{list.email}</td>
                                 <td>{list.status}</td>
                                 <td>
-                                    <button onClick={() => handleDelete(list._id)}>Cancel Booking</button>
+                                    <button className="btn-regular" onClick={() => handleDelete(list._id)}>Cancel Booking</button>
                                 </td>
                             </tr>
                         ))
