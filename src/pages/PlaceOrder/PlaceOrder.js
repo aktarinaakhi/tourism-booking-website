@@ -34,7 +34,6 @@ const PlaceOrder = () => {
             ...data,
             status: 'pending'
         };
-
         const url = 'https://obscure-plains-37105.herokuapp.com/bookings';
         fetch(url, {
             method: "POST",

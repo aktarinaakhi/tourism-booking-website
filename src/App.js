@@ -11,7 +11,6 @@ import PrivateRoute from './context/PrivateRoute';
 import MyBooking from './pages/Dashboard/User/MyBooking/MyBooking'
 import AddService from './pages/Dashboard/Admin/AddService/AddService';
 import BookingList from './pages/Dashboard/User/BookingList/BookingList';
-import ManageService from './pages/Dashboard/Admin/ManageService/ManageService';
 
 function App() {
   return (

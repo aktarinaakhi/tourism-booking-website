@@ -2,9 +2,8 @@ import React, { useEffect, useState } from 'react';
 import useAuth from '../../../../hooks/useAuth';
 
 const MyBooking = () => {
-    const [myBooking, setMyBooking] = useState([])
-    const [bookings, setBookings] = useState([])
-
+    const [myBooking, setMyBooking] = useState([]);
+    const [bookings, setBookings] = useState([]);
     const { user } = useAuth();
 
     useEffect(() => {
@@ -17,23 +16,48 @@ const MyBooking = () => {
         const ownOrder = bookings.filter(booking => booking.email === user?.email);
         setMyBooking(ownOrder);
     })
-    console.log(myBooking);
+
+    //cancel personal booking 
+    const handleDelete = id => {
+        const url = `https://obscure-plains-37105.herokuapp.com/bookings/${id}`;
+        fetch(url, {
+            method: 'DELETE'
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.deletedCount) {
+                    alert("Deleted Successfully");
+                    const remaining = myBooking.filter(myBook => myBook._id !== id);
+                    setBookings(remaining);
+                }
+            });
+    }
 
     return (
-        <div className="text-center my-5">
-            <h1>My Orders</h1>
-            <h4 className="mb-5"> Number of orders : {myBooking.length}</h4>
-            {
-                myBooking.map(mybook => <div key={mybook._id}
-                >
-                    <h2>{mybook.name}</h2>
-                    <h3>Order Id : {mybook._id}</h3>
-                    <button className="btn btn-primary"> Cancel order</button>
-
-                </div>)
-            }
+        <div className="container mt-5">
+            <h2 className="text-center">My Booking</h2>
+            <div className="my-5 row row-cols-1 row-cols-md-2 g-4 mx-auto">
+                {
+                    myBooking.map(mybook => <div className="col"
+                        key={mybook._id} >
+                        <div className="card">
+                            <div className="card-body">
+                                <h5 className="card-title">{mybook.name}</h5>
+                                <h4>{mybook.email}</h4>
+                                <p>Booking Id: {mybook._id}</p>
+                                <p className="card-text">Address: {mybook.Address}</p>
+                                <p>Phone Number : {mybook.Phone}</p>
+                                <div className="">
+                                    <button onClick={() => handleDelete(mybook._id)} className="me-5 btn btn-danger">Cancel booking</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    )
+                }
+            </div>
         </div>
-    );
+    )
 };
 
 export default MyBooking;
