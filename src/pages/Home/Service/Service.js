@@ -1,5 +1,4 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Service = props => {
@@ -20,7 +19,7 @@ const Service = props => {
                     <small>Location: {place}</small> <br />
                     <p>BDT {price}</p>
                     <Link to={`/placeorder/${_id}`}>
-                        <button>Book Now</button>
+                        <button className="card-button">Book Now</button>
                     </Link>
                 </div>
             </div>

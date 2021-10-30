@@ -1,1 +1,15 @@
+.btn-regular {
+  background-color: #f76c6c;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: white;
+}
 
+.card-button {
+  background-color: #15db95;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: white;
+}

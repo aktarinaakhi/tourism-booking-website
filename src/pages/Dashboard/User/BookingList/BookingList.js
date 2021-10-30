@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { Dropdown, Table } from 'react-bootstrap';
+import { Table } from 'react-bootstrap';
 
 const BookingList = () => {
     const [allList, setAllList] = useState([]);
@@ -11,11 +11,8 @@ const BookingList = () => {
             .then(res => res.json())
             .then(data => {
                 setAllList(data)
-                console.log(data)
             })
-    }, [])
-
-    
+    }, []);
 
     const handleDelete = id => {
         const url = `https://obscure-plains-37105.herokuapp.com/bookings/${id}`;

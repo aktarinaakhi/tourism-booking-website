@@ -11,6 +11,8 @@ import PrivateRoute from './context/PrivateRoute';
 import MyBooking from './pages/Dashboard/User/MyBooking/MyBooking'
 import AddService from './pages/Dashboard/Admin/AddService/AddService';
 import BookingList from './pages/Dashboard/User/BookingList/BookingList';
+import MakeAdmin from './pages/Dashboard/Admin/MakeAdmin/MakeAdmin';
+import About from './pages/About/About';
 
 function App() {
   return (
@@ -27,6 +29,10 @@ function App() {
             <Home></Home>
           </Route>
 
+          <Route exact path="/about">
+            <About></About>
+          </Route>
+
           <PrivateRoute exact path="/placeorder/:serviceId">
             <PlaceOrder></PlaceOrder>
           </PrivateRoute>
@@ -41,6 +47,10 @@ function App() {
 
           <PrivateRoute exact path="/bookingList">
             <BookingList></BookingList>
+          </PrivateRoute>
+
+          <PrivateRoute exact path="/admin">
+            <MakeAdmin></MakeAdmin>
           </PrivateRoute>
 
           <Route exact path="/login">

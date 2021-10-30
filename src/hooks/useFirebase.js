@@ -8,6 +8,7 @@ const useFirebase = () => {
     const [user, setUser] = useState({});
     const auth = getAuth();
     const [isLoading, setIsLoading] = useState(true);
+
     const googleProvider = new GoogleAuthProvider();
 
     const handleGoogleSignIn = () => {
@@ -18,19 +19,22 @@ const useFirebase = () => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
                 setUser(user);
-            } else {
+            }
+            else {
                 setUser({});
             }
             setIsLoading(false);
         })
-        return () => unsubscribe;
+        return () => unsubscribe();
     }, [])
 
     const logOut = () => {
         signOut(auth).then(() => {
             setUser({});
         })
-    }
+    };
+
+
 
     return (
         {
