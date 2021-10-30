@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Service = props => {
-    const { name, image, price, discriptoin, place, id } = props.service;
+    const { hotel_name, image, price, descriptoin, place, _id } = props.service;
     const style = {
         width: '300px',
         height: '200px',
@@ -11,15 +11,15 @@ const Service = props => {
     }
     return (
 
-        <div class="col-sm-4 text-center">
-            <div class="card">
-                <div class="card-body">
+        <div className="col-sm-4 text-center">
+            <div className="card">
+                <div className="card-body">
                     <div><img className="card-image" style={style} src={image} alt="" /></div>
-                    <h5 class="card-title mt-3">{name}</h5>
-                    <p class="card-text">{discriptoin}</p>
+                    <h5 className="card-title mt-3">{hotel_name}</h5>
+                    <p className="card-text">{descriptoin}</p>
                     <small>Location: {place}</small> <br />
                     <p>BDT {price}</p>
-                    <Link to={`/placeorder/${id}`}>
+                    <Link to={`/placeorder/${_id}`}>
                         <button>Book Now</button>
                     </Link>
                 </div>

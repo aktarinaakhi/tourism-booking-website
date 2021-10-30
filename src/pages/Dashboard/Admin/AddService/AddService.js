@@ -7,26 +7,14 @@ import './AddService.css'
 const AddService = () => {
     const { register, reset, handleSubmit, watch, formState: { errors } } = useForm();
 
-    const onSubmit = (data) => {
-        const ServiceData = {
-
-            // name: data.name,
-            // discriptoin: data.discriptoin,
-            // price: data.price,
-            // location: data.location,
-            // image: data.image
-            // imageURL: imgURL
-        };
-
-        axios.post('http://localhost:5000/services', data)
+    const onSubmit = data => {
+        axios.post('https://obscure-plains-37105.herokuapp.com/services', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Inserted Successfully');
                     reset();
-
                 }
             })
-        // .then(res => alert('Service Added Successfully'))
         // useHistory.push('/addService')
     }
 

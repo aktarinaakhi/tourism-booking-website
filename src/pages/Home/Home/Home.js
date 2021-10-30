@@ -23,7 +23,6 @@ const Home = () => {
                 setSpinner(false)
             });
     }, [])
-    // console.log(services);
 
     return (
         <div>
@@ -34,14 +33,14 @@ const Home = () => {
             <div id="services" className="container my-5">
 
 
-                <div class="row g-5">
+                <div className="row g-5">
                     <h2 className="my-5 mx-auto text-center">Let's start your tour planning</h2>
                     {
                         spinner && <Spinner animation="border" variant="success" />
                     }
                     {
                         services.slice(0, 6).map(service => <Service
-                            key={service.id}
+                            key={service._id}
                             service={service}
                         >
                         </Service>)

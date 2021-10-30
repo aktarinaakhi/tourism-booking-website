@@ -33,7 +33,7 @@ const Header = () => {
                                 <div className="d-flex">
                                     <NavDropdown title="Dashboard" id="basic-nav-dropdown">
                                         <NavDropdown.Item as={Link} to="/myBooking">My Booking</NavDropdown.Item>
-                                        <NavDropdown.Item as={Link} to="/">Manage all booking</NavDropdown.Item>
+                                        <NavDropdown.Item as={Link} to="/bookingList">Manage booking list</NavDropdown.Item>
                                         <NavDropdown.Item as={Link} to="/addService">Add new service</NavDropdown.Item>
                                     </NavDropdown>
                                     <button onClick={logOut} className="btn-login px-3 mx-3">Logout</button>
