@@ -38,29 +38,19 @@ const Header = () => {
                         <Nav.Link className="text-light" as={Link} to="/home">Home</Nav.Link>
                         <Nav.Link className="text-light" as={HashLink} to="/home#services">Services</Nav.Link>
                         <Nav.Link className="text-light" as={Link} to="/about">About us</Nav.Link>
-                        <Nav.Link className="text-light" as={Link} to="/myBooking">My Booking</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
 
 
                 <Navbar.Collapse className="justify-content-end">
                     <Nav>
-                        {
+                        <NavDropdown title="Dashboard" id="basic-nav-dropdown" className="text-light">
+                            <Nav.Link as={Link} to="/myBooking">My Booking</Nav.Link>
+                            <NavDropdown.Item as={Link} to="/bookingList">Manage booking list</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/addService">Add new service</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/admin">Admin List</NavDropdown.Item>
 
-                            admins ?
-                                <NavDropdown title="Dashboard" id="basic-nav-dropdown" className="text-light">
-
-                                    <NavDropdown.Item as={Link} to="/admin">Admin List</NavDropdown.Item>
-                                </NavDropdown>
-                                :
-                                <NavDropdown title="Dashboard" id="basic-nav-dropdown" className="text-light">
-                                    <NavDropdown.Item as={Link} to="/addService">Add new service</NavDropdown.Item>
-
-                                    <NavDropdown.Item as={Link} to="/bookingList">Manage booking list</NavDropdown.Item>
-
-                                </NavDropdown>
-                        }
-
+                        </NavDropdown>
                         {
                             !user.email ?
                                 <Nav.Link className="mx-lg-3">
