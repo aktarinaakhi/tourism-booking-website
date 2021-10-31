@@ -35,9 +35,10 @@ const Header = () => {
 
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
-                        <Nav.Link className="text-light" as={Link} to="/home">Home</Nav.Link>
+                        <Nav.Link className="text-light" as={Link} to="/home#home">Home</Nav.Link>
                         <Nav.Link className="text-light" as={HashLink} to="/home#services">Services</Nav.Link>
                         <Nav.Link className="text-light" as={Link} to="/about">About us</Nav.Link>
+                        <Nav.Link className="text-light" as={Link} to="/contact">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
 
@@ -45,10 +46,10 @@ const Header = () => {
                 <Navbar.Collapse className="justify-content-end">
                     <Nav>
                         <NavDropdown title="Dashboard" id="basic-nav-dropdown" className="text-light">
-                            <Nav.Link as={Link} to="/myBooking">My Booking</Nav.Link>
+                            <NavDropdown.Item as={Link} to="/myBooking">My Booking</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/bookingList">Manage booking list</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/addService">Add new service</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/admin">Admin List</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/admin">Admin Added</NavDropdown.Item>
 
                         </NavDropdown>
                         {
@@ -63,7 +64,7 @@ const Header = () => {
                                 </Nav.Link>
                                 :
                                 <div className="d-flex align-items-center justify-content-center">
-                                    <button className="mx-3 btn-regular" onClick={() => logOut()}>logout</button>
+                                    <button className="mx-3 btn btn-primary" onClick={() => logOut()}>logout</button>
                                     <p className="text-light mt-2">{user.displayName}</p>
                                 </div>
                         }

@@ -19,7 +19,7 @@ const Service = props => {
                     <small>Location: {location}</small> <br />
                     <p>BDT {price}</p>
                     <Link to={`/placeorder/${_id}`}>
-                        <button className="card-button">Book Now</button>
+                        <button className="btn-regular">Book Now</button>
                     </Link>
                 </div>
             </div>

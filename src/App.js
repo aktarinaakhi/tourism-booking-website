@@ -13,6 +13,7 @@ import AddService from './pages/Dashboard/Admin/AddService/AddService';
 import BookingList from './pages/Dashboard/User/BookingList/BookingList';
 import MakeAdmin from './pages/Dashboard/Admin/MakeAdmin/MakeAdmin';
 import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
 
 function App() {
   return (
@@ -31,6 +32,10 @@ function App() {
 
           <Route exact path="/about">
             <About></About>
+          </Route>
+
+          <Route exact path="/contact">
+            <Contact></Contact>
           </Route>
 
           <PrivateRoute exact path="/placeorder/:serviceId">

@@ -48,7 +48,7 @@ const MyBooking = () => {
                                 <p className="card-text">Address: {mybook.Address}</p>
                                 <p>Phone Number : {mybook.Phone}</p>
                                 <div className="">
-                                    <button onClick={() => handleDelete(mybook._id)} className="me-5 btn btn-danger">Cancel booking</button>
+                                    <button onClick={() => handleDelete(mybook._id)} className="me-5 btn btn-primary">Cancel booking</button>
                                 </div>
                             </div>
                         </div>

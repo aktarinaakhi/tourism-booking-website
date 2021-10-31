@@ -15,7 +15,6 @@ const MakeAdmin = () => {
                     console.log(res);
                 }
             })
-        // useHistory.push('/addService')
     }
 
     return (
@@ -26,7 +25,7 @@ const MakeAdmin = () => {
                 <input name='email' {...register("email", { required: true })} />
                 {errors.email && <span>This field is required</span>}
 
-                <input type="submit" style={{ backgroundColor: '#003580' }} />
+                <input type="submit" style={{ backgroundColor: '#0d6efd' }} />
             </form>
         </div>
     );

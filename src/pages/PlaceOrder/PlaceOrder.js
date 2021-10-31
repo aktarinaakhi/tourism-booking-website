@@ -11,7 +11,6 @@ const PlaceOrder = () => {
     const { serviceId } = useParams();
     const { user } = useAuth();
     const { register, reset, handleSubmit, formState: { errors } } = useForm();
-    // const history = useHistory();
     const [services, setServices] = useState([]);
     const [singleService, setSingleService] = useState({})
     const [confirmationData, setConfirmationData] = useState(null);
@@ -49,10 +48,7 @@ const PlaceOrder = () => {
                     alert('booking Successfully');
                     reset();
                 }
-                // console.log(res);
-
             })
-        // useHistory.push('/addService')
     }
 
     return (
