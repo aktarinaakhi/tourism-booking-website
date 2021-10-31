@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import { Modal, Button } from 'react-bootstrap';
 import useAuth from '../../../../hooks/useAuth';
 
 const MyBooking = () => {
     const [myBooking, setMyBooking] = useState([]);
     const [bookings, setBookings] = useState([]);
     const { user } = useAuth();
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
 
     useEffect(() => {
         fetch(`https://obscure-plains-37105.herokuapp.com/bookings`)
@@ -17,6 +23,10 @@ const MyBooking = () => {
         setMyBooking(ownOrder);
     })
 
+    const modalShow = id => {
+        setShow(true);
+    }
+
     //cancel personal booking 
     const handleDelete = id => {
         const url = `https://obscure-plains-37105.herokuapp.com/bookings/${id}`;
@@ -26,9 +36,9 @@ const MyBooking = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.deletedCount) {
-                    alert("Deleted Successfully");
                     const remaining = myBooking.filter(myBook => myBook._id !== id);
                     setBookings(remaining);
+                    setShow(false)
                 }
             });
     }
@@ -49,14 +59,30 @@ const MyBooking = () => {
                                 <p>Phone Number : {mybook.Phone}</p>
                                 <p>Status: {mybook.status}</p>
                                 <div className="">
-                                    <button onClick={() => handleDelete(mybook._id)} className="me-5 btn btn-primary">Cancel booking</button>
+                                    <button onClick={() => modalShow(mybook._id)} className="me-5 btn btn-primary">Cancel booking</button>
                                 </div>
                             </div>
+                            <div>
+                                <Modal show={show} onHide={handleClose}>
+                                    <Modal.Body>Are you sure to want to cancel your booking ?</Modal.Body>
+                                    <Modal.Footer>
+                                        <Button variant="secondary" onClick={handleClose}>
+                                            Cancel
+                                        </Button>
+                                        <Button variant="primary" onClick={() => handleDelete(mybook._id)}>
+                                            Confirm
+                                        </Button>
+                                    </Modal.Footer>
+                                </Modal>
+                            </div>
+
                         </div>
                     </div>
                     )
                 }
             </div>
+
+
         </div>
     )
 };
