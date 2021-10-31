@@ -5,6 +5,7 @@ import { Table } from 'react-bootstrap';
 
 const BookingList = () => {
     const [allList, setAllList] = useState([]);
+    const [status, setStatus] = useState(false);
 
     useEffect(() => {
         fetch('https://obscure-plains-37105.herokuapp.com/bookings')
@@ -12,7 +13,7 @@ const BookingList = () => {
             .then(data => {
                 setAllList(data)
             })
-    }, []);
+    }, [status]);
 
     const handleDelete = id => {
         const url = `https://obscure-plains-37105.herokuapp.com/bookings/${id}`;
@@ -21,6 +22,7 @@ const BookingList = () => {
         })
             .then(res => res.json())
             .then(data => {
+
                 const confirm = window.confirm("Are you sure to want to delete this service ..!")
                 if (confirm === 'ok') {
                     if (data.deletedCount) {
@@ -30,6 +32,28 @@ const BookingList = () => {
                     }
                 }
                 else {
+                }
+            })
+    }
+
+    const handleUpdateStatus = id => {
+        const update = {
+            status: 'Accepted'
+        }
+        const url = `https://obscure-plains-37105.herokuapp.com/bookings/${id}`;
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(update)
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.modifiedCount > 0) {
+                    setStatus(data);
+                    alert('Status updated successfully');
+
                 }
             })
     }
@@ -55,7 +79,8 @@ const BookingList = () => {
                                 <td>{list.email}</td>
                                 <td>{list.status}</td>
                                 <td>
-                                    <button className="btn-regular" onClick={() => handleDelete(list._id)}>Cancel Booking</button>
+                                    <button className=" btn btn-danger" onClick={() => handleDelete(list._id)}>Cancel</button>
+                                    <button onClick={() => handleUpdateStatus(list._id)} className="btn btn-success ms-4"> Accept</button>
                                 </td>
                             </tr>
                         ))
