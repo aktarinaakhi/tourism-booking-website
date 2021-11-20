@@ -3,7 +3,7 @@ import React from 'react';
 const Contact = () => {
     return (
         <>
-            <section id="input" className="input" style={{ backgroundImage: 'url(https://i.ibb.co/B3ySWS1/diego-jimenez-A-NVHPka9-Rk-unsplash.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center', padding: '5vw' }}>
+            <section id="input" className="input" style={{ backgroundImage: 'url(https://i.ibb.co/B3ySWS1/diego-jimenez-A-NVHPka9-Rk-unsplash.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center', padding: '4vw' }}>
                 <div className="w-50 text-center container">
                     <h2 className="text-light">Save time, save money!</h2>
 

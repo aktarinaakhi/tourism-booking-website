@@ -10,7 +10,6 @@ const Home = () => {
 
     const [services, setServices] = useState([]);
     const [spinner, setSpinner] = useState(true);
-    const [filterService, setFilterService] = useState([]);
 
     useEffect(() => {
         fetch('https://obscure-plains-37105.herokuapp.com/services')
